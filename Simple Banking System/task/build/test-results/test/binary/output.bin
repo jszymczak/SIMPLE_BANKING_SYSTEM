@@ -7,9 +7,9 @@
 
 Your card has been created
 Your card number:
-4000001231929587
+4000001640880423
 Your card PIN: 
-1564
+9382
 
 1. Create an account
 2. Log into account
@@ -18,15 +18,16 @@
 
 Your card has been created
 Your card number:
-4000006852504637
+4000005298711491
 Your card PIN: 
-5040
+6893
 
 1. Create an account
 2. Log into account
 	0. Exit
 > 0
 
+Bye!
 [1;31m
 Start test 2[0m
 1. Create an account
@@ -36,9 +37,9 @@
 
 Your card has been created
 Your card number:
-4000006791010957
+4000003257081329
 Your card PIN: 
-9700
+3429
 
 1. Create an account
 2. Log into account
@@ -46,9 +47,9 @@
 > 2
 
 Enter your card number: 
-> 4000006791010957
+> 4000003257081329
 Enter your PIN: 
-> 9700
+> 3429
 
 "You have successfully logged in!
 
@@ -64,6 +65,7 @@
 	0. Exit
 > 0
 
+Bye!
 [1;31m
 Start test 3[0m
 1. Create an account
@@ -73,9 +75,9 @@
 
 Your card has been created
 Your card number:
-4000006824747507
+4000009140992861
 Your card PIN: 
-4209
+4703
 
 1. Create an account
 2. Log into account
@@ -83,9 +85,9 @@
 > 2
 
 Enter your card number: 
-> 4000006824747507
+> 4000009140992861
 Enter your PIN: 
-> 7061
+> 3835
 
 Wrong card number or PIN
 
@@ -94,6 +96,7 @@
 	0. Exit
 > 0
 
+Bye!
 [1;31m
 Start test 4[0m
 1. Create an account
@@ -103,9 +106,9 @@
 
 Your card has been created
 Your card number:
-4000004825535717
+4000002264943489
 Your card PIN: 
-6252
+5708
 
 1. Create an account
 2. Log into account
@@ -113,9 +116,9 @@
 > 2
 
 Enter your card number: 
-> 400000682112148
+> 400000292782430
 Enter your PIN: 
-> 6252
+> 5708
 
 Wrong card number or PIN
 
@@ -131,9 +134,9 @@
 
 Your card has been created
 Your card number:
-4000009565548587
+4000006938807384
 Your card PIN: 
-2661
+7966
 
 1. Create an account
 2. Log into account
@@ -141,9 +144,9 @@
 > 2
 
 Enter your card number: 
-> 4000009565548587
+> 4000006938807384
 Enter your PIN: 
-> 2661
+> 7966
 
 "You have successfully logged in!
 
@@ -158,3 +161,229 @@
 2. Log out
 	0. Exit
 > 0
+Bye!
+[1;31m
+Start test 6[0m
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000005055493671
+Your card PIN: 
+2273
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000001537675605
+Your card PIN: 
+5560
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000003354281475
+Your card PIN: 
+7302
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000009280646723
+Your card PIN: 
+2512
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000007290577904
+Your card PIN: 
+4287
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000007936071197
+Your card PIN: 
+1253
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000008201413197
+Your card PIN: 
+7735
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000007456817474
+Your card PIN: 
+6476
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000007132998409
+Your card PIN: 
+1321
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000002293893903
+Your card PIN: 
+3314
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000009501762515
+Your card PIN: 
+9043
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000004580914830
+Your card PIN: 
+2243
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000005438557978
+Your card PIN: 
+1961
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000003979494495
+Your card PIN: 
+4618
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000006966742396
+Your card PIN: 
+9146
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000004401958792
+Your card PIN: 
+2135
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000009750263140
+Your card PIN: 
+5791
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000005889840436
+Your card PIN: 
+6522
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000001334505625
+Your card PIN: 
+4999
+
+1. Create an account
+2. Log into account
+	0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000005838744705
+Your card PIN: 
+9570
+
+1. Create an account
+2. Log into account
+	0. Exit

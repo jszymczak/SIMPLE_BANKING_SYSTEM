@@ -1,5 +1,6 @@
 package banking;
 
+import org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -88,7 +89,15 @@ public class Main {
         Random random = new Random();
         String cardNumber = "400000";
         long accountNumber = random.nextInt(900000000) + 100000000;
-        String checkDigit = "7";
-        return cardNumber + accountNumber + checkDigit;
+        StringBuilder longCardNumber = new StringBuilder();
+        for (int i = 0; i < 10; i++) {
+            if (LuhnCheckDigit.LUHN_CHECK_DIGIT.isValid(cardNumber + accountNumber + i)) {
+                longCardNumber.append(cardNumber);
+                longCardNumber.append(accountNumber);
+                longCardNumber.append(i);
+                break;
+            }
+        }
+        return longCardNumber.toString();
     }
 }
