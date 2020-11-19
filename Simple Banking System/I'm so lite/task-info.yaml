@@ -491,6 +491,13 @@ files:
 - name: src/banking/DatabaseProcessing.java
   visible: true
   learner_created: true
+- name: card.s3db
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/93/stages/517/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/93/stages/517/implement">JetBrains
+    Academy</a>
+  time: Thu, 19 Nov 2020 18:29:51 UTC
 record: 3

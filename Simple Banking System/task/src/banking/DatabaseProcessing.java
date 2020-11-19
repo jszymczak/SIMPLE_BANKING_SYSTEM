@@ -1,7 +1,6 @@
 package banking;
 
 import org.sqlite.SQLiteDataSource;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,16 +8,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseProcessing {
-    public static void connect() {
-//        String url = "jdbc:sqlite:D:\\REPO\\SIMPLE_BANKING_SYSTEM\\db\\banking.db";
-        String url = "jdbc:sqlite:db\\banking.db";
 
+    public static void connect(String url) {
         SQLiteDataSource dataSource = new SQLiteDataSource();
         dataSource.setUrl(url);
 
         try (Connection con = dataSource.getConnection()) {
             if (con.isValid(5)) {
-                System.out.println("Connection is valid.");
+                System.out.println("Connected to database.");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -26,9 +23,7 @@ public class DatabaseProcessing {
 
     }
 
-    public static void createCardTable() {
-        String url = "jdbc:sqlite:db\\banking.db";
-
+    public static void createCardTable(String url) {
         String sql = "CREATE TABLE IF NOT EXISTS card (\n"
                     + "id INTEGER PRIMARY KEY,\n"
                     + "number TEXT, "
@@ -43,10 +38,9 @@ public class DatabaseProcessing {
         }
     }
 
-    public static void insertNewCardValues(String cardNumber,
+    public static void insertNewCardValues(String url, String cardNumber,
                                            String pinNumber) {
-        String url = "jdbc:sqlite:db\\banking.db";
-        String sql = "INSERT INTO card (id, number, pin, balance) VALUES (?, ?)";
+        String sql = "INSERT INTO card (number, pin) VALUES (?, ?)";
         try (Connection connection = DriverManager.getConnection(url);
             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setString(1, cardNumber);
