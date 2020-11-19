@@ -1,6 +1,7 @@
 package banking;
 
 import org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -8,6 +9,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        DatabaseProcessing.connect();
+        DatabaseProcessing.createCardTable();
+
         Map<String, String> accountNumbers = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
         int input = 99;
@@ -34,6 +39,7 @@ public class Main {
                     System.out.println("Your card has been created");
                     System.out.println("Your card number:\n" + generatedCardNumber);
                     System.out.println("Your card PIN: \n" + generatedPinNumber);
+                    DatabaseProcessing.insertNewCardValues(generatedCardNumber, generatedPinNumber);
                     System.out.println();
                     input = 99;
                     break;
