@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //        final String url = args[0];
-//        final String url = "jdbc:sqlite:db\\banking.db";
         final String url = "jdbc:sqlite:card.s3db";
         DatabaseProcessing.connect(url);
         DatabaseProcessing.createCardTable(url);
