@@ -51,4 +51,19 @@ public class DatabaseProcessing {
         }
 
     }
+
+    public static void addIncome(String url, String cardNumber,
+                                           String pinNumber, Integer income) {
+        String sql = "UPDATE card SET balance = balance + ? WHERE number = ? AND pin = ?)";
+        try (Connection connection = DriverManager.getConnection(url);
+             PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+            preparedStatement.setInt(1, income);
+            preparedStatement.setString(2, cardNumber);
+            preparedStatement.setString(3, pinNumber);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
 }

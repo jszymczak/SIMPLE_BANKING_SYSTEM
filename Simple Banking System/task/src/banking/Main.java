@@ -1,5 +1,6 @@
 package banking;
 
+import org.apache.commons.logging.Log;
 import org.apache.commons.validator.routines.checkdigit.LuhnCheckDigit;
 
 import java.util.HashMap;
@@ -28,7 +29,10 @@ public class Main {
                     break;
                 case 98:
                     System.out.println("1. Balance");
-                    System.out.println("2. Log out");
+                    System.out.println("2. Add income");
+                    System.out.println("3. Do transfer");
+                    System.out.println("4. Close account");
+                    System.out.println("5. Log out");
                     System.out.println("0. Exit");
                     input = scanner.nextInt() + 10;
                     input = input == 10 ? 0 : input;
@@ -52,6 +56,7 @@ public class Main {
                     if (accountNumbers.containsKey(logInCardNumber) &&
                             accountNumbers.get(logInCardNumber).equals(logInPinNumber)) {
                         resultOfLogIn("You have successfully logged in!");
+                        LoginValues loginValues = new LoginValues(logInCardNumber, logInPinNumber);
                         input = 98;
                     } else {
                         resultOfLogIn("Wrong card number or PIN");
@@ -65,6 +70,12 @@ public class Main {
                     input = 98;
                     break;
                 case 12:
+                    System.out.println();
+                    System.out.println("Enter income: ");
+
+                    Integer income = scanner.nextInt();
+                    break;
+                case 15:
                     System.out.println();
                     System.out.println("You have successfully logged out!");
                     System.out.println();
