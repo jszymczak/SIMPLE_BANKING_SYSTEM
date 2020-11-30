@@ -1,11 +1,8 @@
 package banking;
 
 import org.sqlite.SQLiteDataSource;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.sql.*;
 
 public class DatabaseProcessing {
 
@@ -54,7 +51,7 @@ public class DatabaseProcessing {
 
     public static void addIncome(String url, String cardNumber,
                                            String pinNumber, Integer income) {
-        String sql = "UPDATE card SET balance = balance + ? WHERE number = ? AND pin = ?)";
+        String sql = "UPDATE card SET balance = balance + ? WHERE number = ? AND pin = ?";
         try (Connection connection = DriverManager.getConnection(url);
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setInt(1, income);
@@ -66,4 +63,17 @@ public class DatabaseProcessing {
         }
 
     }
+
+    public static int checkCardAndPinNumber(String url, String cardNumber, String pinNumber) throws SQLException {
+        String sql = "SELECT COUNT(*) as result FROM card WHERE number = ? AND pin = ?";
+        Statement stmt = null;
+        Connection connection = DriverManager.getConnection(url);
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1, cardNumber);
+        preparedStatement.setString(1, pinNumber);
+        ResultSet resultSet = stmt.executeQuery(sql);
+        int result = resultSet.getInt("result");
+        return result;
+    }
+
 }
